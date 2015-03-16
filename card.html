@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>hCard</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<!-- left hand area -->
+  <div id="left-box-area">
+   <h1>hcard Builder</h1>
+      <h4>Personal Details</h4>
+      <hr>
+      <form id="input-form" method="GET">
+        <div class="input-details">
+          <div class="row">
+            <div class="left-form-input">
+              <label>Given Name</label><br>
+              <input type="text" name="given-name" placeholder="John">
+            </div>
+            <div class="right-form-input">
+              <label>Surname</label><br>
+              <input type="text" name="surname" placeholder="Fairfax">
+            </div>
+          </div>
+          <div class="row">            
+            <div class="left-form-input">
+              <label>email</label><br>
+              <input type="email" name="email-address" placeholder="john.fairfax@fairfaxmedia.com.au">
+            </div>
+            <div class="right-form-input">
+              <label>Phone</label><br>
+              <input type="phone" name="phone-number" placeholder="02 9282 2833">
+            </div>
+          </div>
+        </div>
+      <h4>Address</h4>
+      <hr>
+        <div class="input-details">
+         <div class="row">
+            <div class="left-form-input">
+              <label>House name or #</label><br>
+              <input type="text" name="house-name" placeholder="1">
+            </div>
+            <div class="right-form-input">
+              <label>Street</label><br>
+              <input type="text" name="street" placeholder="Darling Island Road">
+            </div>
+          </div>
+          <div class="row">
+            <div class="left-form-input">
+              <label>Suburb</label><br>
+              <input type="text" name="suburb" placeholder="Pyrmont">
+            </div>
+            <div class="right-form-input">
+              <label>State</label><br>
+              <input type="text" name="state" placeholder="NSW">
+            </div>
+          </div>
+          <div class="row">
+            <div class="left-form-input">
+              <label>Postcode</label><br>
+              <input type="text" name="postcode" placeholder="2009">
+            </div>
+            <div class="right-form-input">
+              <label>Country</label><br>
+              <input type="text" name="country" placeholder="Australia">
+            </div>
+          </div>
+        </div>
+        <div class="button-area">
+          <button type="submit" value="Create hCard" id="submit-button" >Create hCard</button>
+        </div> 
+      </form> 
+  </div>
+
+<!-- left hand area end -->
+
+<!-- right hand area -->
+  <div id="right-box-area">
+    <div class="pre-header"><h3>Hcard preview</h3></div>
+      <div class="hcard-preview">
+
+        <div class="blue-header">
+          <span class="name-display"></span>
+          
+        </div>
+
+        <div id="card-body-details">
+          <h6>email</h6> <span class="email-address-area"></span>
+            <hr>
+          <h6>phone</h6> <span class="phone-number-area"></span>
+            <hr>
+          <h6>address</h6> <span class="address-area"></span>
+            <hr>
+          <div class="spacer"></div> <span class="district-area"></span> 
+            <hr>
+
+          <div  class="left-card">
+            <h6>postcode</h6> <span class="postcode-area"></span>
+          </div>
+          <div class="right-card">
+            <h6>country</h6> <span class="country-area"></span>
+          </div>
+          <div class="row"></div>
+            <hr>
+           
+        </div>
+      </div>
+  </div>
+<!-- right hand area end -->
+
+<script type="text/javascript" src="script/jquery.min.js" ></script>
+<script type="text/javascript" src="script/app.js" ></script>
+
+
+</body>
+</html>
+
